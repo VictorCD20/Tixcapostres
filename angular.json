@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "f810ab27-72c7-40a6-947d-2932692df94a"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -59,6 +60,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "port": 4500
+          },
           "configurations": {
             "production": {
               "buildTarget": "api-post:build:production"
